@@ -1,24 +1,10 @@
-# Matt Lee's Portfolio
+# Matthew Lee's Personal Website
 
-Welcome to the source code repository for my portfolio page. This project showcases my skills, projects, and professional experience.
-
-## Table of Contents
-
-- [Introduction](#introduction)
-- [Features](#features)
-- [Usage](#usage)
-- [Contact](#contact)
+Welcome to the source code repository for my personal website. This project showcases my professional experience, software projects, and web development skills.
 
 ## Introduction
 
 This portfolio page is built to highlight my work as a developer. It includes sections for my projects, skills, and contact information.
-
-## Features
-
-- Responsive design
-- Project showcase
-- Skills section
-- Contact form
 
 ## Usage
 
