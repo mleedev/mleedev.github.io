@@ -25,13 +25,14 @@ To run this site locally:
 
 - HTML5
 - CSS3
+- TailwindCSS
 - JavaScript
 
 ## Contact
 
-- Email: leematthew895@gmail.com
+- Email: mattlee.swe@gmail.com
 - LinkedIn: [linkedin.com/in/l-matt-swe](https://www.linkedin.com/in/l-matt-swe/)
-- GitHub: [@mleedev](https://github.com/yourusername)
+- GitHub: [@mleedev](https://github.com/mleedev)
 
 ## License
 
