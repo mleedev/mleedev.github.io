@@ -1,155 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Matthew Lee - Software Engineer</title>
-        <script src="https://cdn.tailwindcss.com"></script>
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio of Matthew Lee - Software Engineer" />
+    <meta name="author" content="Matthew Lee" />
+    <meta name="keywords" content="Matthew Lee, Software Engineer, Software Developer, Programmer, Portfolio" />
+    <title>Matthew Lee - Software Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      // Setting Tailwind color palette
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#60A5FA",
+              background: "#111827",
+              "muted-background": "#1F2937",
+              border: "#E5E7EB",
+              foreground: "#111827",
+              "muted-foreground": "#9CA3AF",
+              accent: "#10B981",
+            },
+          },
+        },
+      };
+    </script>
+    <script src="/assets/script.js"></script>
+    <link rel="stylesheet" href="/assets/styles.css" />
+  </head>
 
-    <body>
-        <main class="min-h-screen">
-            <!-- Hero Section -->
-            <div class="min-h-screen flex items-center justify-center bg-gradient-to-r from-gray-900 to-gray-800 text-white">
-                <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                <h1 class="text-4xl sm:text-6xl font-bold mb-6 animate-fade-in">
-                    Hi, I'm <span class="text-blue-400">Matthew Lee</span>
-                </h1>
-                <p class="text-xl sm:text-2xl text-gray-300 mb-8">
-                    Software Engineer specializing in building exceptional digital experiences
-                </p>
-                <a
-                    href="#contact"
-                    class="inline-block bg-blue-500 hover:bg-blue-600 text-white font-semibold 
-                        px-6 py-3 rounded-lg transition-colors duration-200"
-                >
-                    Get In Touch
-                </a>
-                </div>
+  <body>
+    <header>
+      <!-- Hero Section -->
+      <section
+        class="min-h-screen flex items-center justify-center bg-gradient-to-b from-muted-background to-background text-white"
+      >
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h1 class="text-4xl sm:text-6xl font-bold mb-6 animate-fade-in">
+            Hi, I'm <span class="text-blue-400">Matthew Lee</span>
+          </h1>
+          <p class="text-xl sm:text-2xl text-gray-300 mb-8">
+            Software Engineer building exceptional digital experiences
+          </p>
+          <div class="flex justify-center gap-4 mb-12">
+            <a
+              href="https://www.github.com/mleedev"
+              class="social-link"
+              aria-label="GitHub"
+              title="Visit my GitHub profile"
+            >
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
+                />
+                <path d="M9 18c-4.51 2-5-2-7-2" />
+              </svg>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/l-matt-swe/"
+              class="social-link"
+              aria-label="LinkedIn"
+              title="Visit my LinkedIn profile"
+            >
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                <rect width="4" height="12" x="2" y="9" />
+                <circle cx="4" cy="4" r="2" />
+              </svg>
+            </a>
+            <a href="mailto:mattlee.swe@gmail.com" class="social-link" aria-label="Email" title="Email me">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect width="20" height="16" x="2" y="4" rx="2" />
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+              </svg>
+            </a>
+          </div>
+          <a
+            href="#projects"
+            class="inline-block bg-blue-500 hover:bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg transition-colors duration-200"
+          >
+            View My Work
+          </a>
+          <div class="hero-bottom-container">
+            <div class="scroll-indicator" aria-hidden="true">
+              <div class="scroll-dot"></div>
             </div>
-        
-            <!-- Experience Section -->
-            <div id="experience" class="py-20 bg-gray-50">
-                <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 class="text-3xl font-bold text-center mb-12">Work Experience</h2>
-                <div class="space-y-8">
-                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-                        <h3 class="text-xl font-semibold text-gray-900">DataDoor</h3>
-                        <p class="text-blue-600 font-medium">Software Engineer</p>
-                        <p class="text-gray-600 text-sm">Oct. 2022 - Present</p>
-                        <p class="mt-2 text-gray-700">Description of work experience.</p>
-                    </div>
-                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-                        <h3 class="text-xl font-semibold text-gray-900">Heroful</h3>
-                        <p class="text-blue-600 font-medium">Founder & FullStack Developer</p>
-                        <p class="text-gray-600 text-sm">May 2015 - Jul. 2019</p>
-                        <p class="mt-2 text-gray-700">Description of work experience.</p>
-                    </div>
-                </div>
-                </div>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section id="experience" class="py-20 bg-gray-900 text-white">
+        <div class="px-4 container mx-auto">
+          <h2 class="text-3xl font-bold text-center mb-12">Experience</h2>
+          <div class="mt-6">
+            <div
+              class="border-l-2 border-border pl-6 pb-10 relative before:content-[''] before:absolute before:-left-[9px] before:top-1 before:w-4 before:h-4 before:bg-primary before:rounded-full last:pb-0"
+            >
+              <div class="mb-2">
+                <span class="text-primary text-sm">2022 - Present</span>
+              </div>
+              <h3 class="text-xl font-bold">Software Engineer</h3>
+              <h4 class="text-lg text-muted-foreground mb-2">DataDoor</h4>
+              <p class="text-muted-foreground">
+                Lead development of cloud-native applications using React, Node.js, and AWS. Architected and implemented
+                microservices-based solutions that improved system reliability by 40%. Mentored junior developers and
+                established engineering best practices.
+              </p>
             </div>
-        
-            <!-- Projects Section -->
-            <div id="projects" class="py-20 bg-gray-900 text-white">
-                <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 class="text-3xl font-bold text-center mb-12">Projects</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <div class="bg-gray-800 rounded-lg p-6 hover:transform hover:scale-105 transition-transform duration-300">
-                        <h3 class="text-xl font-semibold mb-3">Dungeon Runners</h3>
-                        <p class="text-gray-400 mb-4">Short description of the project.</p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-3 py-1 bg-blue-600 rounded-full text-sm">Java</span>
-                            <span class="px-3 py-1 bg-blue-600 rounded-full text-sm">Kotlin</span>
-                            <span class="px-3 py-1 bg-blue-600 rounded-full text-sm">Gradle</span>
-                            <span class="px-3 py-1 bg-blue-600 rounded-full text-sm">Spigot API</span>
-                        </div>
-                        <a href="#" class="text-blue-400 hover:text-blue-300">
-                        View Project →
-                        </a>
-                    </div>
-                    <div class="bg-gray-800 rounded-lg p-6 hover:transform hover:scale-105 transition-transform duration-300">
-                        <h3 class="text-xl font-semibold mb-3">Better Degree Planner</h3>
-                        <p class="text-gray-400 mb-4">Short description of the project.</p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-3 py-1 bg-blue-600 rounded-full text-sm">React.js</span>
-                            <span class="px-3 py-1 bg-blue-600 rounded-full text-sm">React Flow</span>
-                            <span class="px-3 py-1 bg-blue-600 rounded-full text-sm">Python</span>
-                            <span class="px-3 py-1 bg-blue-600 rounded-full text-sm">Go</span>
-                        </div>
-                        <a href="#" class="text-blue-400 hover:text-blue-300">
-                        View Project →
-                        </a>
-                    </div>
-                    <div class="bg-gray-800 rounded-lg p-6 hover:transform hover:scale-105 transition-transform duration-300">
-                        <h3 class="text-xl font-semibold mb-3">Desert Drive</h3>
-                        <p class="text-gray-400 mb-4">Short description of the project.</p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-3 py-1 bg-blue-600 rounded-full text-sm">C/C++</span>
-                            <span class="px-3 py-1 bg-blue-600 rounded-full text-sm">OpenGL</span>
-                            <span class="px-3 py-1 bg-blue-600 rounded-full text-sm">SFML</span>
-                        </div>
-                        <a href="#" class="text-blue-400 hover:text-blue-300">
-                        View Project →
-                        </a>
-                    </div>
-                </div>
-                </div>
+            <div
+              class="border-l-2 border-border pl-6 pb-10 relative before:content-[''] before:absolute before:-left-[9px] before:top-1 before:w-4 before:h-4 before:bg-primary before:rounded-full last:pb-0"
+            >
+              <div class="mb-2">
+                <span class="text-primary text-sm">2015 - 2019</span>
+              </div>
+              <h3 class="text-xl font-bold">Founder & Full Stack Developer</h3>
+              <h4 class="text-lg text-muted-foreground mb-2">Heroful</h4>
+              <p class="text-muted-foreground">
+                Developed and maintained web applications using JavaScript, HTML, and CSS. Collaborated with
+                cross-functional teams to deliver high-quality software solutions. Participated in code reviews and
+                contributed to the improvement of development processes.
+              </p>
             </div>
-        
-            <!-- Contact Section -->
-            <div id="contact" class="py-20 bg-white">
-                <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 class="text-3xl font-bold text-center mb-12">Get In Touch</h2>
-                <form action="#" method="POST" class="space-y-6">
-                    <div>
-                    <label for="name" class="block text-sm font-medium text-gray-700">
-                        Name
-                    </label>
-                    <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
-                        required
-                    />
-                    </div>
-                    <div>
-                    <label for="email" class="block text-sm font-medium text-gray-700">
-                        Email
-                    </label>
-                    <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
-                        required
-                    />
-                    </div>
-                    <div>
-                    <label for="message" class="block text-sm font-medium text-gray-700">
-                        Message
-                    </label>
-                    <textarea
-                        id="message"
-                        name="message"
-                        rows="4"
-                        class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
-                        required
-                    ></textarea>
-                    </div>
-                    <div class="text-center">
-                    <button
-                        type="submit"
-                        class="inline-flex justify-center py-3 px-6 border border-transparent shadow-sm 
-                            text-base font-medium rounded-md text-white bg-blue-600 
-                            hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
-                    >
-                        Send Message
-                    </button>
-                    </div>
-                </form>
-                </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="py-20 bg-gray-900 text-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 class="text-3xl font-bold text-center mb-12">Projects</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-gray-800 rounded-lg p-6 hover:transform hover:scale-105 transition-transform duration-300">
+              <h3 class="text-xl font-semibold mb-3">Dungeon Runners</h3>
+              <p class="text-gray-400 mb-4">
+                Created a plugin for Minecraft, facilitating a procedurally generated level system.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-3 py-1 bg-blue-600 rounded-full text-sm">Java</span>
+                <span class="px-3 py-1 bg-blue-600 rounded-full text-sm">Kotlin</span>
+                <span class="px-3 py-1 bg-blue-600 rounded-full text-sm">Gradle</span>
+                <span class="px-3 py-1 bg-blue-600 rounded-full text-sm">Spigot API</span>
+              </div>
+              <a href="{project.link}" class="text-blue-400 hover:text-blue-300"> View Project → </a>
             </div>
-        </main>
-    </body>
+
+            <div class="bg-gray-800 rounded-lg p-6 hover:transform hover:scale-105 transition-transform duration-300">
+              <h3 class="text-xl font-semibold mb-3">Better Degree Planner</h3>
+              <p class="text-gray-400 mb-4">
+                Led the frontend subgroup of a team of 6 to improve the academic planning experience for students at
+                CSULB.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-3 py-1 bg-blue-600 rounded-full text-sm">React.js</span>
+                <span class="px-3 py-1 bg-blue-600 rounded-full text-sm">React Flow</span>
+                <span class="px-3 py-1 bg-blue-600 rounded-full text-sm">Python</span>
+                <span class="px-3 py-1 bg-blue-600 rounded-full text-sm">Go</span>
+              </div>
+              <a href="{project.link}" class="text-blue-400 hover:text-blue-300"> View Project → </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
