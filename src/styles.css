@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #60A5FA;
+  --color-primary-hover: #3B82F6;
+  --color-background: #111827;
+  --color-muted-background: #1F2937;
+  --color-foreground: #F5FAFF;
+  --color-muted-foreground: #ACB4C2;
+  --color-border: #E7EEF5;
+  --color-accent: #10B981;
+
+  --color-surface: #212c3b;
+  --color-button: #0C5CDD;
+  --color-button-hover: #0A4CC0;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-block bg-button hover:bg-button-hover text-white font-semibold rounded-lg transition-colors duration-200";
+  }
+
+  .tag {
+    @apply px-3 py-1 bg-button rounded-full text-sm;
+  }
+
+  .social-link {
+    @apply p-2 border border-border rounded-lg text-foreground transition-colors duration-150 hover:bg-surface;
+  }
+}
+
+
+
+/* Scroll indicator with custom animation and verticle height media query */
+/* @layer components {
+  .scroll-indicator {
+    @apply w-6 h-10 border-2 border-foreground rounded-full flex justify-center;
+    animation: scroll-down 2s ease-in-out infinite;
+  }
+
+  .scroll-dot {
+    @apply w-1 h-3 bg-foreground rounded-full mt-2;
+  }
+} */
+@media (max-height: 549px) {
+  .scroll-indicator {
+    display: none;
+  }
+}
+@keyframes scroll-down {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
