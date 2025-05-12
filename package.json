@@ -1,14 +1,13 @@
 {
   "devDependencies": {
-    "autoprefixer": "^10.4.21",
+    "@tailwindcss/cli": "^4.1.5",
     "gh-pages": "^6.3.0",
-    "postcss": "^8.5.3",
     "tailwindcss": "^4.1.4"
   },
   "scripts": {
-    "build": "tailwindcss -i ./assets/styles.css -o ./dist/styles.css --minify",
-    "watch": "tailwindcss -i ./assets/styles.css -o ./dist/styles.css --watch",
-    "prepare-deploy": "cp ./assets/script.js ./dist/",
+    "build": "tailwindcss -i ./src/styles.css -o ./dist/styles.css --minify",
+    "watch": "tailwindcss -i ./src/styles.css -o ./dist/styles.css --watch",
+    "prepare-deploy": "cp ./src/script.js ./dist/",
     "deploy": "npm run build && npm run prepare-deploy && gh-pages -d ."
   }
 }
