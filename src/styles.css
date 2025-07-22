@@ -23,22 +23,50 @@
 
 @layer components {
   .btn {
-    @apply inline-block bg-button hover:bg-button-hover text-white font-semibold rounded-lg transition-colors duration-200";
+    display: inline-block;
+    background-color: var(--color-button);
+    color: white;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    transition: background-color 0.2s;
+  }
+  .btn:hover {
+    background-color: var(--color-button-hover);
   }
 
   .tag {
-    @apply px-3 py-1 bg-button rounded-full text-sm;
+    padding: 0.25rem 0.75rem;
+    background-color: var(--color-primary);
+    border-radius: 9999px;
+    font-size: 0.875rem;
   }
 
   .social-link {
-    @apply p-2 border border-border rounded-lg text-foreground transition-colors duration-150 hover:bg-surface;
+    padding: 0.5rem;
+    border: 1px solid var(--color-border);
+    border-radius: 0.5rem;
+    color: var(--color-foreground);
+    transition: background-color 0.15s;
+  }
+  .social-link:hover {
+    background-color: var(--color-surface);
+  }
+
+  .feather {
+    width: 20px;
+    height: 20px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
   }
 }
 
 
 
 /* Scroll indicator with custom animation and verticle height media query */
-/* @layer components {
+@layer components {
   .scroll-indicator {
     @apply w-6 h-10 border-2 border-foreground rounded-full flex justify-center;
     animation: scroll-down 2s ease-in-out infinite;
@@ -47,7 +75,7 @@
   .scroll-dot {
     @apply w-1 h-3 bg-foreground rounded-full mt-2;
   }
-} */
+}
 @media (max-height: 549px) {
   .scroll-indicator {
     display: none;

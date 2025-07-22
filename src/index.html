@@ -5,19 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Portfolio of Matthew Lee - Software Engineer" />
     <meta name="author" content="Matthew Lee" />
-    <meta name="keywords" content="Matthew Lee, Software Engineer, Software Developer, Programmer, Portfolio" />
+    <meta
+      name="keywords"
+      content="Matthew Lee, Portfolio, Software Engineer, Software Developer, Programmer"
+    />
     <title>Matthew Lee - Software Engineer</title>
-    <script src="/src/script.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
     <link rel="stylesheet" href="/dist/styles.css" />
   </head>
 
   <body class="bg-muted-background">
     <header>
-      <!-- Hero Section -->
       <section
         class="min-h-screen flex items-center justify-center bg-gradient-to-b from-muted-background to-background text-white"
       >
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8 xl:px-8">
           <h1 class="text-4xl sm:text-6xl font-bold mb-6 animate-fade-in">
             Hi, I'm <span class="text-primary">Matthew Lee</span>
           </h1>
@@ -31,21 +33,7 @@
               aria-label="GitHub"
               title="Visit my GitHub profile"
             >
-              <svg
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path
-                  d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
-                />
-                <path d="M9 18c-4.51 2-5-2-7-2" />
-              </svg>
+              <i data-feather="github"></i>
             </a>
             <a
               href="https://www.linkedin.com/in/l-matt-swe/"
@@ -53,20 +41,7 @@
               aria-label="LinkedIn"
               title="Visit my LinkedIn profile"
             >
-              <svg
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
-                <rect width="4" height="12" x="2" y="9" />
-                <circle cx="4" cy="4" r="2" />
-              </svg>
+              <i data-feather="linkedin"></i>
             </a>
             <a
               href="mailto:mattlee.swe@gmail.com"
@@ -74,19 +49,7 @@
               aria-label="Email"
               title="Email me"
             >
-              <svg
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <rect width="20" height="16" x="2" y="4" rx="2" />
-                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
-              </svg>
+              <i data-feather="mail"></i>
             </a>
           </div>
           <a href="#projects" class="btn px-6 py-3"> View My Work </a>
@@ -101,7 +64,7 @@
 
     <main>
       <section id="experience" class="py-20 bg-background text-white">
-        <div class="px-4 container mx-auto">
+        <div class="px-4 sm:px-6 lg:px-8 container max-w-5xl mx-auto">
           <h2 class="text-3xl font-bold text-center mb-12">Experience</h2>
           <div class="mt-6">
             <div
@@ -113,11 +76,13 @@
               <h3 class="text-xl font-bold">Software Engineer</h3>
               <h4 class="text-lg text-muted-foreground mb-2">DataDoor</h4>
               <p class="text-muted-foreground">
-                Lead development of cloud-native applications using React, Node.js, and AWS. Architected and implemented
-                microservices-based solutions that improved system reliability by 40%. Mentored junior developers and
-                established engineering best practices.
+                Developed RESTful APIs and a React.js dashboard for user and device management.
+                Implemented secure authentication with Okta API and integrated Stripe for secure
+                payments. Collaborated with marketing to align the company’s website with brand
+                standards.
               </p>
             </div>
+
             <div
               class="border-l-2 border-border pl-6 pb-10 relative before:content-[''] before:absolute before:-left-[9px] before:top-1 before:w-4 before:h-4 before:bg-primary before:rounded-full last:pb-0"
             >
@@ -127,9 +92,9 @@
               <h3 class="text-xl font-bold">Founder & Full Stack Developer</h3>
               <h4 class="text-lg text-muted-foreground mb-2">Heroful</h4>
               <p class="text-muted-foreground">
-                Developed and maintained web applications using JavaScript, HTML, and CSS. Collaborated with
-                cross-functional teams to deliver high-quality software solutions. Participated in code reviews and
-                contributed to the improvement of development processes.
+                Built an ASP.NET social media style website, later modernizing it with responsive
+                design. Implemented real-time features via SignalR, migrated to Azure for
+                scalability, and enhanced security through SendGrid and Twilio-based 2FA.
               </p>
             </div>
           </div>
@@ -137,41 +102,109 @@
       </section>
 
       <section id="projects" class="py-20 bg-background text-white">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="px-4 sm:px-6 lg:px-8 container max-w-5xl mx-auto">
           <h2 class="text-3xl font-bold text-center mb-12">Projects</h2>
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div class="bg-surface rounded-lg p-6 hover:transform hover:scale-105 transition-transform duration-300">
-              <h3 class="text-xl font-semibold mb-3">Dungeon Runners</h3>
-              <p class="text-muted-foreground mb-4">
-                Created a plugin for Minecraft, facilitating a procedurally generated level system.
-              </p>
-              <div class="flex flex-wrap gap-2 mb-4">
-                <span class="tag">Java</span>
-                <span class="px-3 py-1 bg-button rounded-full text-sm">Kotlin</span>
-                <span class="px-3 py-1 bg-button rounded-full text-sm">Gradle</span>
-                <span class="px-3 py-1 bg-button rounded-full text-sm">Spigot API</span>
+            <a href="" class="block">
+              <div
+                class="bg-surface rounded-lg p-6 hover:transform hover:scale-105 transition-transform duration-300"
+              >
+                <div class="flex items-center mb-3">
+                  <h3 class="text-xl font-semibold">Dungeon Runners</h3>
+                  <i
+                    data-feather="external-link"
+                    class="text-muted-foreground ml-1 w-4 h-4"
+                    aria-hidden="true"
+                  ></i>
+                </div>
+                <p class="text-muted-foreground mb-4">
+                  Created a plugin for Minecraft that facilitates a procedurally generated level
+                  system. Leveraged the FastAsyncWorldEdit API to efficiently set blocks for generated
+                  environments.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span class="tag">Java</span>
+                  <span class="tag">Kotlin</span>
+                  <span class="tag">Gradle</span>
+                  <span class="tag">Spigot API</span>
+                </div>
               </div>
-              <a href="{project.link}" class="text-primary hover:text-primary-hover transition-colors duration-150">
-                View Project →
-              </a>
-            </div>
+            </a>
 
-            <div class="bg-surface rounded-lg p-6 hover:transform hover:scale-105 transition-transform duration-300">
-              <h3 class="text-xl font-semibold mb-3">Better Degree Planner</h3>
-              <p class="text-muted-foreground mb-4">
-                Led the frontend subgroup of a team of 6 to improve the academic planning experience for students at
-                CSULB.
-              </p>
-              <div class="flex flex-wrap gap-2 mb-4">
-                <span class="px-3 py-1 bg-button rounded-full text-sm">React.js</span>
-                <span class="px-3 py-1 bg-button rounded-full text-sm">React Flow</span>
-                <span class="px-3 py-1 bg-button rounded-full text-sm">Python</span>
-                <span class="px-3 py-1 bg-button rounded-full text-sm">Go</span>
+            <a href="" class="block">
+              <div
+                class="bg-surface rounded-lg p-6 hover:transform hover:scale-105 transition-transform duration-300"
+              >
+                <div class="flex items-center mb-3">
+                  <h3 class="text-xl font-semibold">mleedev.github.io</h3>
+                  <i
+                    data-feather="external-link"
+                    class="text-muted-foreground ml-1 w-4 h-4"
+                    aria-hidden="true"
+                  ></i>
+                </div>
+                <p class="text-muted-foreground mb-4">
+                  Created a plugin for Minecraft that facilitates a procedurally generated level
+                  system. Leveraged the FastAsyncWorldEdit API to efficiently set blocks for generated
+                  environments.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span class="tag">HTML</span>
+                  <span class="tag">CSS</span>
+                  <span class="tag">TailwindCSS</span>
+                </div>
               </div>
-              <a href="" class="text-primary hover:text-primary-hover transition-colors duration-150">
-                View Project →
-              </a>
-            </div>
+            </a>
+
+            <a href="https://github.com/mleedev/desert-drive-opengl" class="block">
+              <div
+                class="bg-surface rounded-lg p-6 hover:transform hover:scale-105 transition-transform duration-300"
+              >
+                <div class="flex items-center mb-3">
+                  <h3 class="text-xl font-semibold">Desert Drive</h3>
+                  <i
+                    data-feather="external-link"
+                    class="text-muted-foreground ml-1 w-4 h-4"
+                    aria-hidden="true"
+                  ></i>
+                </div>
+                <p class="text-muted-foreground mb-4">
+                  Built a 3D rasterization demo using OpenGL featuring a driveable jeep in a desert
+                  environment. Rendered textured third-party models using Assimp and stb_image.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span class="tag">C/C++</span>
+                  <span class="tag">OpenGL</span>
+                  <span class="tag">GLSL</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="" class="block">
+              <div
+                class="bg-surface rounded-lg p-6 hover:transform hover:scale-105 transition-transform duration-300"
+              >
+                <div class="flex items-center mb-3">
+                  <h3 class="text-xl font-semibold">Better Degree Planner</h3>
+                  <i
+                    data-feather="external-link"
+                    class="text-muted-foreground ml-1 w-4 h-4"
+                    aria-hidden="true"
+                  ></i>
+                </div>
+                <p class="text-muted-foreground mb-4">
+                  Led the frontend subgroup of a team of 6 to improve the academic planning experience
+                  for students at CSULB. Guided users through visual class nodes implemented with
+                  React Flow.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span class="tag">React.js</span>
+                  <span class="tag">React Flow</span>
+                  <span class="tag">Python</span>
+                  <span class="tag">Go</span>
+                </div>
+              </div>
+            </a>
           </div>
         </div>
       </section>
@@ -179,15 +212,17 @@
 
     <footer class="bg-gradient-to-b from-background to-muted-background text-white py-10">
       <div class="container mx-auto px-4 text-center">
-        <p class="text-sm text-muted-foreground mb-2">© 2025 Matthew Lee. All rights reserved.</p>
         <p class="text-sm text-muted-foreground mt-2">
-          Built with <a href="https://tailwindcss.com/" class="text-primary">Tailwind CSS</a> and
-          <a href="" class="text-primary">JavaScript</a>.
+          Built with <a href="https://tailwindcss.com/" class="text-primary">Tailwind CSS</a>.
         </p>
         <p class="text-sm text-muted-foreground mt-2">
           Icons by <a href="https://feathericons.com/" class="text-primary">Feather Icons</a>.
         </p>
       </div>
     </footer>
+
+    <script>
+      feather.replace();
+    </script>
   </body>
 </html>
