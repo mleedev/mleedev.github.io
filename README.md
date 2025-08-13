@@ -14,26 +14,40 @@ This site is built with HTML, CSS, and JavaScript, highlighting my front-end dev
 - Skills and technology proficiencies
 - Contact information and links to professional profiles
 
-## Local Development
+## Running locally
 
 To run this site locally:
 
 1. Clone the repository
-2. Open `index.html` in your browser
+2. Install dependencies with `npm install`
+3. Start the development server with `npm run dev`
+4. Open the local server URL (usually `http://localhost:5173`) in your browser
 
 ## Technologies Used
 
 - HTML5
 - CSS3
 - TailwindCSS
-- JavaScript
+- Vite
+- JavaScript (ES Modules)
+- PostCSS
+- Autoprefixer
+- Feather Icons
+
+## Dependencies
+
+See package.json for a full list of dependencies and devDependencies.
+
+## Credits
+
+UI icons provided by Feather Icons.
 
 ## Contact
 
-- Email: mattlee.swe@gmail.com
+- Email: [mattlee.swe@gmail.com](mailto:mattlee.swe@gmail.com)
 - LinkedIn: [linkedin.com/in/l-matt-swe](https://www.linkedin.com/in/l-matt-swe/)
 - GitHub: [@mleedev](https://github.com/mleedev)
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
